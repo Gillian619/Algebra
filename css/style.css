@@ -4,8 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #F0F2F0;
     background-color: #967BE8;
+    align-self: center;
 }
-
+#title{
+    align-self: center;
+}
 .stg {
     color: #20505c;
 }
