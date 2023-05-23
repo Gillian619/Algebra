@@ -52,5 +52,5 @@ function mascara() {
     let delta = parseFloat(Math.pow(b, 2) - 4 * a * c)
     let x1 = parseFloat((-b + Math.sqrt(delta)) / (2 * a)).toFixed(2)
     let x2 = parseFloat((-b - Math.sqrt(delta)) / (2 * a)).toFixed(2)
-    document.getElementById("resultado-bh").innerHTML = "x1" + x1 + "x2" + x2
+    document.getElementById("resultado-bh").innerHTML = " x1=" + x1 + " x2=" + x2
 }

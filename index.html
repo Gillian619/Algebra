@@ -11,62 +11,76 @@
     <title>Document</title>
 </head>
 
-<body>
-    <section class="row">
+<body id="bodymain">
+    <section class="geo row">
+        <h2>Calculo Geométrico</h2>
         <div class="area-circulo col">
-            <input type="number" id="raio" placeholder="valor do raio">
-            <button onclick="circulo()">Enviar</button>
-            <p id="resultado-a"></p>
+            <h3 class="stg">Calcular area de um circulo</h3>
+            <input type="number" id="raio" placeholder="raio">
+            <button class="btn btn-dark" onclick="circulo()">Enviar</button>
+            <p id="resultado-a" class="resultado"></p>
         </div>
         <div class="area-retangulo col">
-            <input type="number" id="ar" placeholder="valor da altura do retangulo">
-            <input type="number" id="br" placeholder="valor da base do retangulo">
-            <button onclick="retangulo()">Enviar</button>
-            <p id="resultado-r"></p>
+            <h3 class="stg">Calcular area de um retangulo</h3>
+            <input type="number" id="ar" placeholder="altura do retangulo">
+            <input type="number" id="br" placeholder="base do retangulo">
+            <button class="btn btn-dark" onclick="retangulo()">Enviar</button>
+            <p id="resultado-r" class="resultado"></p>
         </div>
         <div class="area-triangulo col">
-            <input type="number" id="at" placeholder="valor da altura do triangulo">
-            <input type="number" id="bt" placeholder="valor da base do triangulo">
-            <button onclick="triangulo()">Enviar</button>
-            <p id="resultado-t"></p>
+            <h3 class="stg">Calcular area de um triangulo</h3>
+            <input type="number" id="at" placeholder="altura do triangulo">
+            <input type="number" id="bt" placeholder="base do triangulo">
+            <button class="btn btn-dark" onclick="triangulo()">Enviar</button>
+            <p id="resultado-t" class="resultado"></p>
         </div>
         <div class="hippotenusa col">
+            <h3 class="stg">Calcular a hipotenusa de um triangulo</h3>
             <input type="number" id="co" placeholder="valor do CO">
             <input type="number" id="ca" placeholder="valor do CA">
-            <button onclick="hip()">Enviar</button>
-            <p id="resultado-h"></p>
+            <button class="btn btn-dark" onclick="hip()">Enviar</button>
+            <p id="resultado-h" class="resultado"></p>
         </div>
     </section>
-    <section>
-        <div class="real>dolar">
-            <input type="number" id="dol" placeholder="Insira a cotação atual do dolar($)">
+    <section class="conv row">
+        <h2>Conversão de unidades de medida</h2>
+        <div class="real>dolar col">
+            <h3 class="stg">converter Real(R$) para dolar ($)</h3>
+            <input type="number" id="dol" placeholder="cotação atual do dolar($)">
             <input type="number" id="real" placeholder="valor em reais(R$)">
-            <button onclick="dolar()">Enviar</button>
-            <p id="resultado-d"></p>
+            <button class="btn btn-dark" onclick="dolar()">Enviar</button>
+            <p id="resultado-d" class="resultado"></p>
         </div>
-        <div class="c>f">
-            <input type="number" id="ce" placeholder="insira a Temperatura em Celcius ">
-            <button onclick="degree()">Enviar</button>
-            <p id="resultado-c"></p>
+        <div class="c>f col">
+            <h3 class="stg">converter celcius (C) para fahrenheit(F)</h3>
+            <input type="number" id="ce" placeholder="Temperatura em Celcius ">
+            <button class="btn btn-dark" onclick="degree()">Enviar</button>
+            <p id="resultado-c" class="resultado"></p>
         </div>
-        <div class="medias">
-            <input type="number" id="n1" placeholder="valor da primeira nota">
-            <input type="number" id="n2" placeholder="valor da segunda nota">
-            <input type="number" id="n3" placeholder="Insira o valor da terceira nota">
-            <button onclick="media()">Enviar</button>
-            <p id="resultado-m"></p>
-        </div>
-        <div class="velocidade">
+        <div class="velocidade col">
+            <h3 class="stg">converter metros por segundo(M/S) para kilometros por hora(K/M)</h3>
             <input type="number" id="ms" placeholder="velocidade em m/s">
-            <button onclick="velocidade()">Enviar</button>
-            <p id="resultado-v"></p>
+            <button class="btn btn-dark" onclick="velocidade()">Enviar</button>
+            <p id="resultado-v" class="resultado"></p>
         </div>
-        <div class="bha">
+    </section>
+    <section class="math row">
+        <h2>calculo matemático</h2>
+        <div class="medias col">
+            <h3 class="stg">Calcular media Aritimética</h3>
+            <input type="number" id="n1" placeholder="primeira nota">
+            <input type="number" id="n2" placeholder="segunda nota">
+            <input type="number" id="n3" placeholder="terceira nota">
+            <button class="btn btn-dark" onclick="media()">Enviar</button>
+            <p id="resultado-m" class="resultado"></p>
+        </div>
+        <div class="bha col">
+            <h3 class="stg">calculo de equação de segundo grau</h3>
             <input type="number" id="a" placeholder="Insira o valor de a">
             <input type="number" id="b" placeholder="Insira o valor de b">
             <input type="number" id="c" placeholder="Insira o valor de c">
-            <button onclick="mascara()">Enviar</button>
-            <p id="resultado-bh"></p>
+            <button class="btn btn-dark" onclick="mascara()">Enviar</button>
+            <p id="resultado-bh" class="resultado"></p>
         </div>
     </section>
 
