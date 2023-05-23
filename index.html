@@ -5,59 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="area-circulo">
-        <input type="number" id="raio" placeholder="valor do raio">
-        <button onclick="circulo()">Enviar</button>
-        <p id="resultado-a"></p>
-    </div>
-    <div class="area-retangulo">
-        <input type="number" id="a-r" placeholder="valor da altura do retangulo">
-        <input type="number" id="b-r" placeholder="valor da base do retangulo">
-        <button onclick="retangulo()">Enviar</button>
-        <p id="resultado-r"></p>
-    </div>
-    <div class="area-triangulo">
-        <input type="number" id="a-t" placeholder="valor da altura do triangulo">
-        <input type="number" id="b-t" placeholder="valor da base do triangulo">
-        <button onclick="triangulo()">Enviar</button>
-        <p id="resultado-t"></p>
-    </div>
-    <div class="hippotenusa">
-        <input type="number" id="co" placeholder="valor do CO">
-        <input type="number" id="ca" placeholder="valor do CA">
-        <button onclick="hip()">Enviar</button>
-        <p id="resultado-h"></p>
-    </div>
-    <div class="real>dolar">
-        <input type="number" id="dol" placeholder="Insira a cotação atual do dolar($)">
-        <input type="number" id="real" placeholder="valor em reais(R$)">
-        <button onclick="dolar()">Enviar</button>
-        <p id="resultado-d"></p>
-    </div>
-    <div class="c>f">
-        <input type="number" id="ce" placeholder="insira a Temperatura em Celcius ">
-        <button onclick="degree()">Enviar</button>
-        <p id="resultado-c"></p>
-    </div>
-    <div class="medias">
-        <input type="number" id="n1" placeholder="valor da primeira nota">
-        <input type="number" id="n2" placeholder="valor da segunda nota">
-        <input type="number" id="n3" placeholder="Insira o valor da terceira nota">
-        <button onclick="media()">Enviar</button>
-        <p id="resultado-m"></p>
-    </div>
-    <div class="bha">
-        <input type="number" id="a" placeholder="Insira o valor de a">
-        <input type="number" id="b" placeholder="Insira o valor de b">
-        <input type="number" id="c" placeholder="Insira o valor de c">
-        <button onclick="mascara()">Enviar</button>
-        <p id="resultado-bh"></p>
-    </div>
+    <section>
+        <div class="area-circulo">
+            <input type="number" id="raio" placeholder="valor do raio">
+            <button onclick="circulo()">Enviar</button>
+            <p id="resultado-a"></p>
+        </div>
+        <div class="area-retangulo">
+            <input type="number" id="ar" placeholder="valor da altura do retangulo">
+            <input type="number" id="br" placeholder="valor da base do retangulo">
+            <button onclick="retangulo()">Enviar</button>
+            <p id="resultado-r"></p>
+        </div>
+        <div class="area-triangulo">
+            <input type="number" id="at" placeholder="valor da altura do triangulo">
+            <input type="number" id="bt" placeholder="valor da base do triangulo">
+            <button onclick="triangulo()">Enviar</button>
+            <p id="resultado-t"></p>
+        </div>
+        <div class="hippotenusa">
+            <input type="number" id="co" placeholder="valor do CO">
+            <input type="number" id="ca" placeholder="valor do CA">
+            <button onclick="hip()">Enviar</button>
+            <p id="resultado-h"></p>
+        </div>
+    </section>
+    <section>
+        <div class="real>dolar">
+            <input type="number" id="dol" placeholder="Insira a cotação atual do dolar($)">
+            <input type="number" id="real" placeholder="valor em reais(R$)">
+            <button onclick="dolar()">Enviar</button>
+            <p id="resultado-d"></p>
+        </div>
+        <div class="c>f">
+            <input type="number" id="ce" placeholder="insira a Temperatura em Celcius ">
+            <button onclick="degree()">Enviar</button>
+            <p id="resultado-c"></p>
+        </div>
+        <div class="medias">
+            <input type="number" id="n1" placeholder="valor da primeira nota">
+            <input type="number" id="n2" placeholder="valor da segunda nota">
+            <input type="number" id="n3" placeholder="Insira o valor da terceira nota">
+            <button onclick="media()">Enviar</button>
+            <p id="resultado-m"></p>
+        </div>
+        <div class="velocidade">
+            <input type="number" id="ms" placeholder="velocidade em m/s">
+            <button onclick="velocidade()">Enviar</button>
+            <p id="resultado-v"></p>
+        </div>
+        <div class="bha">
+            <input type="number" id="a" placeholder="Insira o valor de a">
+            <input type="number" id="b" placeholder="Insira o valor de b">
+            <input type="number" id="c" placeholder="Insira o valor de c">
+            <button onclick="mascara()">Enviar</button>
+            <p id="resultado-bh"></p>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

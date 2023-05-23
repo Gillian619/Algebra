@@ -5,15 +5,15 @@ function circulo() {
     document.getElementById('resultado-a').innerHTML = area;
 }
 function retangulo() {
-    const pi = 3.14
-    let raio = parseFloat(document.getElementById("raio").value);
-    let arear = (+ "a-r" * "b-r").toFixed(2);
+    let ar = parseFloat(document.getElementById("ar").value);
+    let br = parseFloat(document.getElementById("br").value);
+    let arear = (+ ar * br).toFixed(2);
     document.getElementById('resultado-r').innerHTML = arear;
 }
 function triangulo() {
-    const pi = 3.14
-    let raio = parseFloat(document.getElementById("raio").value);
-    let areat = (+ 2 / ("a-t" * "b-t")).toFixed(2);
+    let at = parseFloat(document.getElementById("at").value);
+    let bt = parseFloat(document.getElementById("bt").value);
+    let areat = (+ (at * bt) / 2).toFixed(2);
     document.getElementById('resultado-t').innerHTML = areat;
 }
 function hip() {
@@ -39,6 +39,11 @@ function media() {
     let n3 = parseFloat(document.getElementById("n3").value)
     let nm = ((n1 + n2 + n3) / 3).toFixed(2);
     document.getElementById("resultado-m").innerHTML = nm;
+}
+function velocidade() {
+    let ms = parseFloat(document.getElementById("ms").value)
+    let km = (ms / 3.6).toFixed(2)
+    document.getElementById("resultado-v").innerHTML = km
 }
 function mascara() {
     let a = parseFloat(document.getElementById("a").value)
