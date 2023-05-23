@@ -12,25 +12,25 @@
 </head>
 
 <body>
-    <section>
-        <div class="area-circulo">
+    <section class="row">
+        <div class="area-circulo col">
             <input type="number" id="raio" placeholder="valor do raio">
             <button onclick="circulo()">Enviar</button>
             <p id="resultado-a"></p>
         </div>
-        <div class="area-retangulo">
+        <div class="area-retangulo col">
             <input type="number" id="ar" placeholder="valor da altura do retangulo">
             <input type="number" id="br" placeholder="valor da base do retangulo">
             <button onclick="retangulo()">Enviar</button>
             <p id="resultado-r"></p>
         </div>
-        <div class="area-triangulo">
+        <div class="area-triangulo col">
             <input type="number" id="at" placeholder="valor da altura do triangulo">
             <input type="number" id="bt" placeholder="valor da base do triangulo">
             <button onclick="triangulo()">Enviar</button>
             <p id="resultado-t"></p>
         </div>
-        <div class="hippotenusa">
+        <div class="hippotenusa col">
             <input type="number" id="co" placeholder="valor do CO">
             <input type="number" id="ca" placeholder="valor do CA">
             <button onclick="hip()">Enviar</button>
@@ -68,8 +68,9 @@
             <button onclick="mascara()">Enviar</button>
             <p id="resultado-bh"></p>
         </div>
+    </section>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
