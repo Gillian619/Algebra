@@ -68,8 +68,8 @@ function media() {
 function velocidade() {
     let ms = parseFloat(document.getElementById("ms").value)
     let km = (ms / 3.6).toFixed(2)
-    if (ms=0){
-        document.getElementById("resultado-v").innerHTML="Erro: velocidade invalida"
+    if (ms = 0) {
+        document.getElementById("resultado-v").innerHTML = "Erro: velocidade invalida"
     }
     document.getElementById("resultado-v").innerHTML = km
 }
@@ -87,6 +87,6 @@ function mascara() {
         alert("Erro: Informe um valor válido").innerHTML
     }
     else {
-        document.getElementById("resultado-bh").innerHTML = " x1=" + x1 + " x2=" + x2
+        document.getElementById("resultado-bh").innerHTML = " x1= " + x1 + " x2= " + x2
     }
 }
